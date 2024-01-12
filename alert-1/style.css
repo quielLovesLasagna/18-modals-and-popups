@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+:root {
+	--cl-white: #fff;
+	--cl-dark-grey: #54595e;
+	--cl-light-grey: #54595e99;
+	--cl-light-grey-2: #f5f5f5;
+	--cl-light-grey-3: #e7e3e3;
+}
+
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-family: "Inter", sans-serif;
+}
+
+.alert {
+	max-width: 54rem;
+	box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+	display: flex;
+	align-items: flex-start;
+	padding: 4rem;
+	border-radius: 0.8rem;
+	position: relative;
+}
+
+.close-container {
+	cursor: pointer;
+	position: absolute;
+	top: 1rem;
+	right: 1rem;
+	width: 2.6rem;
+	height: 2.6rem;
+	background-color: var(--cl-light-grey-3);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 50%;
+	padding: 1rem;
+}
+
+.close-container i {
+	font-size: 1.6rem;
+	color: var(--cl-dark-grey);
+}
+
+.check-container {
+	width: 5.6rem;
+	height: 5.6rem;
+	background-color: var(--cl-light-grey-2);
+	margin-right: 2rem;
+	display: grid;
+	place-items: center;
+	padding: 1.4rem;
+	border-radius: 0.8rem;
+}
+
+.check-container i {
+	color: var(--cl-dark-grey);
+	font-size: 2.8rem;
+}
+
+.alert-text-container h1 {
+	font-size: 2rem;
+	font-weight: 600;
+	color: var(--cl-dark-grey);
+	margin-bottom: 1rem;
+}
+
+.alert-text-container p {
+	font-size: 1.4rem;
+	color: var(--cl-light-grey);
+	line-height: 1.6;
+}
